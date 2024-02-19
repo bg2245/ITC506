@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Font Delivery</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rye&display=swap">
+    <title>Custom Font Example</title>
     <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+
+        h1 {
+            font-family: 'Protest Revolution', sans-serif;
+            font-size: 2.5rem;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Rye', sans-serif;
+            font-size: 2.5rem;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Other styles */
         body {
-            font-family: 'Rye', cursive;
             background-color: #f5f5f5;
             color: #333;
             margin: 0;
@@ -19,12 +37,6 @@
             background-color: #007bff;
             color: #fff;
             padding: 20px;
-            text-align: center;
-        }
-
-        h1, h2 {
-            font-size: 2.5rem;
-            margin: 20px 0;
             text-align: center;
         }
 
@@ -47,15 +59,14 @@
 </head>
 <body>
     <header>
-        <h1>Different Font Used From Google Fonts.</h1>
+        <h1>Welcome to the Font Delivery Page.!</h1>
     </header>
     <main>
-        <h2>Welcome to the Font Delivery Page</h2>
-        <p>This page demonstrates how a custom font can be delivered to a client's browser.</p>
-        <p>The font used in this page is "Rye", which is served through Google Fonts.</p>
+        <h2>This page demonstrates how a custom font</h2>
+        <p>This paragraph uses the Protest Revolution font for h1 and Rye font for h2.</p>
     </main>
     <footer>
-        Last updated: <span id="lastModified"></span>
+        <p>Last updated: <span id="lastModified"></span></p>
     </footer>
     <script type="text/javascript">
          var x = document.lastModified;
