@@ -5,10 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Font Example</title>
     <style>
-        
         @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header, footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        footer {
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
 
         h1 {
             font-family: 'Protest Revolution', sans-serif;
@@ -24,52 +51,59 @@
             text-align: center;
         }
 
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
         p {
             font-size: 1.2rem;
             margin: 10px 0;
             text-align: center;
         }
 
-        footer {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px;
+        /* Additional styling for demonstration */
+        h3 {
+            font-family: 'Caveat', cursive;
+            font-size: 2rem;
+            margin: 20px 0;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        }
+
+        h4 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.8rem;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        h5 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        blockquote {
+            font-family: 'Kode Mono', monospace;
+            font-size: 1.5rem;
+            margin: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to the Font Delivery Page.!</h1>
+        <h1>Welcome to the Font Delivery Page!</h1>
     </header>
     <main>
-        <h2>This page demonstrates how a custom font can be imported.</h2>
-        <p>This paragraph uses the Protest Revolution font for h1 and Rye font for h2.</p>
+        <h2>This page demonstrates how custom fonts can be imported.</h2>
+        <h3>Below I have mentioned a sample code to import unique fonts to CSS.</h3>
+        <blockquote>@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');</blockquote>
+        <h5>In this WebPage I have used 5 Unique Fonts from web to.!</h5>
+        
     </main>
     <footer>
         <p>Last updated: <span id="lastModified"></span></p>
     </footer>
     <script type="text/javascript">
-         var x = document.lastModified;
-         document.getElementById('lastModified').textContent = x;
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
     </script>
 </body>
 </html>
